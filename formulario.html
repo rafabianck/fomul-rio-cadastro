@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Formulário de Cadastro</h1>
+    </div>
+
+    <div>
+        <form action=".">
+            <fieldset>
+                <legend>Dados de login</legend>
+
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" required>
+
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" required>
+
+                <label for="password_confirm">Confirmação de senha</label>
+                <input type="password" name="password" id="password_confirm" required>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <form action=".">
+            <fieldset>
+
+                <legend>Dados pessoais</legend>
+
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="name" required>
+
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+
+                    Sexo:
+                        <label for="fem">Feminino</label>
+                        <input type="radio" name="fem" value="fem" checked>
+
+                        <label for="masc">Masculino</label>
+                        <input type="radio" name="masc" value="masc" checked>
+
+                <div>
+
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" required>
+
+                <label for="tel">Telefone</label>
+                <input type="tel" name="telefone" id="tel" required>
+
+                <label for="data_de_nascimento">Data de nascimento</label>
+                <input type="date" name="data_de_nascimento" id="data_de_nascimento" required>
+
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <form action=".">
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" required>
+
+                <label for="rua">Rua</label>
+                <input type="text" name="rua" id="rua" required>
+                
+                <label for="numero">Número</label>
+                <input type="number" name="numero" id="numero" required>
+            
+                <div>
+
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" id="bairro">
+
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade">
+
+                <label for="estado">Estado</label>
+                 
+                <select id="estado" name="estado" required>
+                    <option value="">--Escolha seu estado--</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </select>
+
+                </div> 
+
+            </fieldset>
+        </form>
+    </div>
+   
+    <input type="submit" value="Enviar">
+
+</body>
+
+</html>
